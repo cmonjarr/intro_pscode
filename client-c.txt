@@ -2,3 +2,13 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Product Package Counter #
+
+Declare loop_counter int
+
+Set loop_counter = 2
+
+While loop_counter <= 50 
+	Print Loop_counter
+	increment Loop_counter by two
+End While

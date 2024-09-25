@@ -2,3 +2,49 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Find the Spot - Pseudocode #
+
+# Assumption: each coordinate unit = a step.#
+# Based on the hint (loop), I am assuming that command can only be given for a single step, at a time. #
+
+Declare Customer_X_Coordinate int,
+	Customer_Y_Coordinate int,
+	Location_X_Coordinate int,
+	Location_Y_Coordinate int,
+	X_Delta int,
+	Y_Delta int
+
+/* Initialize loop control variable */
+Set Customer_X_Coordinate = c_x,
+	Customer_Y_Coordinate = c_y,
+	Location_X_Coordinate = l_x,
+	Location_Y_Coordinate = l_y
+
+
+Calculate the difference between the customer and location X coordinates and assign it to X_Delta.
+Calculate the difference between the customer and location Y coordinates and assign it  to Y_Delta.
+
+If X_Delta is less than zero Then
+	While X_Delta != 0
+		Step East
+		Set X_Delta = X_Delta + 1
+	End While
+Else
+	While X_Delta != 0
+		Step West  
+		Set X_Delta = X_Delta - 1
+	End While
+End
+
+If Y_Delta is less than zero Then
+	While Y_Delta != 0
+		Step North  
+		Set Y_Delta = Y_Delta + 1
+	End While
+Else
+	While Y_Delta != 0
+		Step South 
+		Set Y_Delta = Y_Delta - 1
+	End While
+End
+

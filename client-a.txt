@@ -2,3 +2,24 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+#Guess the Number Game - Pseudocode#
+
+Declare Random_Number int,
+  	Player_Guess int
+
+# Initialize variables #
+Set Random_Number variable to a number between 1 and 10.
+Set Player_Guess to zero
+
+While (Player_Guess < 3 ) and (Random_number !=  Player_Guess)
+	Increment Player_Guess by 1
+	Prompt user to enter his/her guess and assign to Player_Guess variable.
+End while
+
+# Determine loop exit condition and display result #
+If Random_number equals Player_Guess 
+Then display “Congratulations! You guessed it!”
+Else  display “Sorry! Better luck next time!”
+End If
+
+
