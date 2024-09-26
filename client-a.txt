@@ -5,14 +5,16 @@
 #Guess the Number Game - Pseudocode#
 
 Declare Random_Number int,
-  	Player_Guess int
+  	Player_Guess int,
+	Guess_count
 
 # Initialize variables #
 Set Random_Number variable to a number between 1 and 10.
 Set Player_Guess to zero
+set Guess_Count = 0
 
-While (Player_Guess < 3 ) and (Random_number !=  Player_Guess)
-	Increment Player_Guess by 1
+While (Guess_Count < 3 ) and (Random_number !=  Player_Guess)
+	Increment Guess_Count by 1
 	Prompt user to enter his/her guess and assign to Player_Guess variable.
 End while
 
